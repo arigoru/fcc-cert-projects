@@ -1,0 +1,29 @@
+{
+  "name": "fcc-isqa-1-converter",
+  "version": "0.0.1",
+  "description": "Metric to Imperical converter for Freecodecamp certification",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "NODE_ENV=test node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "cors": "^2.8.1",
+    "dotenv": "^6.2.0",
+    "express": "^4.14.0",
+    "helmet": "^3.15.1",
+    "mocha": "^3.2.0",
+    "zombie": "^5.0.5"
+  },
+  "engines": {
+    "node": "4.4.3"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "license": "MIT"
+}

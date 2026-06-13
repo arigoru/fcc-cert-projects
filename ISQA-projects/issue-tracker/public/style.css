@@ -1,0 +1,98 @@
+body, html {
+  margin: 0px;
+  padding: 0px;
+  background-color: hsl(0,0%,10%);
+}
+
+
+.center {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#projectTitle {
+  text-align: center;
+  color: hsl(0,0%,90%);
+}
+
+#submitNewIssue {
+  background-color: hsl(100,10%,90%);
+  width: 600px;
+  font-size: 2em;
+}
+
+#newIssue,
+#updateIssue {
+  height: 500px;
+}
+
+form>input,
+form>textarea {
+ font-size: 1em; 
+ width: 90%;
+}
+
+.form-button {
+ margin: 10px;
+  font-size: 1em;
+  width: 40%;
+/*  height: 75%;*/
+  background-color: hsl(200,50%,80%);
+  align-self: center;
+  border: 3px solid black;
+  border-radius: 15px;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  transition: background-color 0.4s ease-in-out; 
+}
+
+.form-button:hover {
+  background-color: hsl(200,50%,70%); 
+}
+
+
+input[type=checkbox] {
+  transform: scale(2);
+}
+
+#issueDisplay {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.issues-table {
+  margin: 5px;
+  width: 90%;
+  background-color: hsl(150,50%,90%); 
+  border-radius: 5px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.issue:hover {
+  background-color: hsl(150,50%,60%); 
+}
+
+.issue {
+  border: 1px solid black;
+}
+
+.issue th {
+  font-weight: normal;  
+}
+
+.closed {
+  background-color: hsl(350,00%,60%); 
+}
+
+.issues-title {
+  color: hsl(0,0%,90%);
+  margin: 0px;
+  margin-top: 10px;
+}
+
+
+.credits {
+  text-align: center;
+  color: gray;
+}

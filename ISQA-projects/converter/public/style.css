@@ -1,0 +1,118 @@
+html, body {
+	background: hsl(0,0%,10%);
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-flow: column nowrap;	
+	align-items: center;
+}
+
+header {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	color: hsl(0,0%,90%);
+}
+
+#testui {
+	position: relative;
+	background: hsl(200,10%,70%);
+	display: flex;
+	width: 50vw;
+	flex-flow: column nowrap;
+	align-content: center;
+	align-items: center;
+	border: 5px solid black;
+	border-radius: 25px;
+	height: auto;
+	transition:max-height 2.3s ease-out;
+}
+#userstories {
+	background: hsl(200,10%,70%);
+	display: flex;
+	width: 50vw;
+	flex-flow: column nowrap;
+	align-content: center;
+	align-items: center;
+	border: 5px solid black;
+	border-radius: 25px;
+	height: auto;
+	padding: 25px;
+	font-size:1.5em;
+}
+
+
+#convertForm {
+
+	/*background: hsl(100,10%,50%);*/
+	display: flex;
+	height: 200px;
+	width: 100%;
+	flex-flow: column nowrap;
+	/*border-radius: 25px;*/
+}
+
+#convertField {
+	height: 25%;
+	width: 90%;
+	align-self: center;
+	margin: 10px;
+	text-align: center;
+	font-size: 2em;
+	border-radius: 5px;
+}
+
+#convert {
+	margin: 10px;
+	font-size: 3em;
+	width: 50%;
+	height: 75%;
+	background-color: hsl(200,50%,70%);
+	align-self: center;
+	border: 3px solid black;
+	border-radius: 15px;
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+	transition: background-color 0.4s ease-in-out; 
+}
+#convert:hover{
+  background-color: hsl(200,50%,50%);
+}
+
+#result,#jsonResult{
+	transition:max-height 2.3s ease-out;
+	margin: 0;
+	padding: 15px;
+	max-height: 600px;
+}
+
+#result {
+  /*background-color: hsl(300,50%,50%);*/
+	font-size: 3em;
+	text-align: center;
+}
+
+#jsonResult {
+  /*background-color: hsl(350,50%,50%);*/
+	background-color: hsl(200,10%,90%);
+	font-size: 1em;
+	margin: 5px;
+}
+
+.collapsed {
+	max-height: 0px !important;
+}
+
+.hidden {
+	display: none !important;
+}
+
+#show-info {
+	position: absolute;
+	top:12px;
+	right: 12px;
+}
+

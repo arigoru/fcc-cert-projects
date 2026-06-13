@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Issue tracker</title>
+    <meta name="description" content="Issue tracker for Freecodecamp certification">
+    <link id="favicon" rel="icon" href="" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/style.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="projectTitle"></h1>
+    </header>
+    <center class="center">
+      <div id="submitNewIssue">
+        <form id="newIssue" method="post" action="/api/">
+          <h3>Submit a new issue:</h3>
+          <input type="text" name="issue_title" placeholder="*Title" required=""><br>
+          <textarea type="text" name="issue_text" placeholder="*Text" required=""></textarea><br>
+          <input type="text" name="created_by" placeholder="*Created by" required="">
+          <input type="text" name="assigned_to" placeholder="(opt)Assigned to">
+          <input type="text" name="status_text" placeholder="(opt)Status text"><br>
+          <button class="form-button" type="submit">Submit Issue</button>
+        </form>
+
+        <form id="updateIssue" hidden=true>
+        <h3>Update issue on <i>apitest</i></h3>
+        <input type="text" name="_id" placeholder="*_id" required=""><br>
+        <input type="text" name="issue_title" placeholder="(opt)Title"><br>
+        <textarea type="text" name="issue_text" placeholder="(opt)Text"></textarea><br>
+        <input type="text" name="created_by" placeholder="(opt)Created by"><br>
+        <input type="text" name="assigned_to" placeholder="(opt)Assigned to"><br>
+        <input type="text" name="status_text" placeholder="(opt)Status text"><br>
+        <label name="openLabel"><input type="checkbox" name="open" value=false>Closed?</label><br>
+        <button class="form-button" type="submit">Update Issue</button>
+        <input class="form-button" type="button" value="Cancel" id="cancelUpdate">
+      </form><br>
+
+      </div>
+      
+      <div id="issueDisplay"></div>
+      <p class="credits">Created by <a href="https://arigoru.github.io/" target="_blank">Arigoru</a> for <a href="https://freecodecamp.org" target="_blank">freecodecamp.org</a> challenges.</p>  
+    </center>
+
+    <script src="/public/issue.js"></script>
+  </body>
+</html>

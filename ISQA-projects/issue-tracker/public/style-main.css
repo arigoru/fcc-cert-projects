@@ -1,0 +1,107 @@
+body,
+html {
+	margin: 0px;
+	padding: 0px;
+	background-color: hsl(0,0%,10%);
+}
+
+body {
+	display: flex;
+	flex-flow: column nowrap;	
+	align-items: center;
+}
+
+
+header {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	color: hsl(0,0%,90%);
+}
+
+
+#testui {
+	position: relative;
+	background: hsl(200,10%,70%);
+	display: flex;
+	width: 75vw;
+	flex-flow: column nowrap;
+	align-content: center;
+	align-items: center;
+	border: 5px solid black;
+	border-radius: 25px;
+	height: auto;
+	transition:max-height 2.3s ease-out;
+}
+
+#userstories {
+	background: hsl(200,10%,80%);
+	display: flex;
+	width: 75vw;
+	flex-flow: column nowrap;
+	align-content: center;
+	align-items: center;
+	border: 5px solid black;
+	border-radius: 25px;
+	height: auto;
+	padding: 25px;
+	font-size:1.5em;
+}
+
+code {
+  /*background-color: hsl(350,50%,50%);*/
+	background-color: hsl(200,10%,90%);
+	font-size: 1em;
+	margin: 5px;
+	padding: 0px;
+}
+
+.border>button {
+	margin: 10px;
+	font-size: 3em;
+	width: 100%;
+/*	height: 75%;*/
+	background-color: hsl(200,50%,70%);
+	align-self: center;
+	border: 3px solid black;
+	border-radius: 15px;
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+	transition: background-color 0.4s ease-in-out; 
+}
+
+.border>button:hover {
+  background-color: hsl(200,50%,50%);
+}
+
+.border>input,
+.border>textarea,
+.border>label
+ {
+/*	height: 25%;*/
+	width: 90%;
+	align-self: center;
+	margin: 10px;
+	text-align: center;
+	font-size: 2em;
+	border-radius: 5px;
+}
+.border>label>input {
+
+}
+
+#show-info {
+	position: absolute;
+	top:24px;
+	right: 24px;
+	font-size: 3em;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.credits {
+  text-align: center;
+  color: gray;
+}
